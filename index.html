@@ -1,17 +1,141 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Homepage</title>
-<link rel="shortcut icon" type="image/png" href="img/icon.png" >
-</head>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/icon.png" > 
+        <link rel="stylesheet" href="style_homepage.css">
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<body style="background-image: linear-gradient(90deg,#7474BF,hsl(205, 59%, 49%)); 
-margin-top: 4ch ;margin-bottom: 4ch; margin-left: 4ch; margin-right: 4ch;" >
+        <title>Homepage</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+        </a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Maria Ailah's Portfolio</a>
 
-        <img src="img/profile_org.png" height=30% width="30%" alt="profile_image" />
-        <h1>Maria Ailah C. Rolda</h1> 
-        <a href = "BioNote.html"><h1>MP1</h1></a>
-        <a href = "BioNote_CSS.html"><h1>MP2</h1></a>
-</body>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#share" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#accessory" class="nav__link">Machine Problems</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--========== HOME ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                            <div class="img_prof">
+                                <img src="img/profile1.jpg" alt="">
+                            </div>
+                    </div>
+
+                    <div class="home__data">
+                        <h1 class="home__title">Maria Ailah C. Rolda</h1>
+                        <h3 class="home__description">Computer Engineering Student<br>
+                                Web Developer
+                        </h3>
+                    </div>   
+                </div>
+            </section>
+
+            <!--========== SHARE ==========-->
+            <section class="share section bd-container" id="share">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">About Me </h2>
+                        <p class="share__description">
+                                <b>Maria Ailah Rolda</b>  is a college student currently in her third year taking
+                                up the program in Bachelor of Science in Computer Engineering at the University of the East - Manila. 
+                                She enjoys spending her time watching movies or television series,
+                                listening to music; K-pop groups like <a style="color: aqua;" href ="https://en.wikipedia.org/wiki/NCT_(group)">NCT</a>, 
+                                <a style="color: aqua;" href ="https://en.wikipedia.org/wiki/Exo_(group)">EXO</a>, 
+                                <a style="color: aqua;" href ="https://en.wikipedia.org/wiki/Red_Velvet_(group)">Red Velvet</a>, 
+                                and <a style="color: aqua;" href ="https://en.wikipedia.org/wiki/Blackpink">Blackpink</a>, 
+                                and also she enjoys reading ebooks.
+                        </p>
+                    </div>
+
+                    <div class="share__img">
+                        
+                          <img src="img/profile_image2.jpg" alt="">      
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--========== ACCESSORIES ==========-->
+            <section class="accessory section bd-container" id="accessory">
+                <h2 class="section-title">Machine Problems</h2>
+
+                <div class="accessory__container bd-grid">
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                                <span class="accessory__preci">Machine Problem One</span>
+                        </a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                                <span class="accessory__preci">Machine Problem Two</span>
+                        </a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                          <span class="accessory__preci">Machine Problem Three</span>
+                        </a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                                <span class="accessory__preci">Machine Problem Four</span>
+                        </a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                                <span class="accessory__preci">Machine Problem Five</span>
+                        </a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="img/default.png" alt="" class="accessory__img">
+                        <a href="#" class="button accessory__button">
+                                <span class="accessory__preci">Machine Problem Six</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        
+        </main>
+
+        
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="main_homepage.js"></script>
+    </body>
 </html>
